@@ -31,6 +31,9 @@ namespace WPF_OOP9
 
         }
 
+        public Heating WarmUp { get; set; }
+        public Lights Lights { get; set; }
+
 
     }
 }

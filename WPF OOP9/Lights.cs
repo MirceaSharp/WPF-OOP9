@@ -6,20 +6,10 @@ using System.Threading.Tasks;
 
 namespace WPF_OOP9
 {
-    class Heating
+    class Lights
     {
 
-        private double _degrees;
-        public double Degrees { get; set; }
         public bool Power { get; set; }
-
-        public double InFahrenheit()
-        {
-
-        }
-
-
-
 
     }
 }
