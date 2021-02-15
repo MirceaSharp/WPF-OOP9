@@ -20,9 +20,28 @@ namespace WPF_OOP9
     /// </summary>
     public partial class MainWindow : Window
     {
+        BitmapImage Image1 = new BitmapImage(new Uri(@"Images\lamp_aan.jpg", UriKind.Relative));
+        
+
+
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        
+
+        private void btnLight_Click(object sender, RoutedEventArgs e)
+        {
+            img1.Source = Image1;
+            
+        }
+        
+
+
+
     }
+
+
+
 }
