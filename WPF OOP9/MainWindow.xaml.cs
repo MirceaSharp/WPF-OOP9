@@ -21,7 +21,7 @@ namespace WPF_OOP9
     public partial class MainWindow : Window
     {
         BitmapImage Image1 = new BitmapImage(new Uri(@"Images\lamp_aan.jpg", UriKind.Relative));
-        
+        Heating heating = new Heating();
 
 
         public MainWindow()
@@ -36,10 +36,22 @@ namespace WPF_OOP9
             img1.Source = Image1;
             
         }
-        
 
+        private void TemperatureSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            heating.Degrees = TemperatureSlider.Value;
+            txtTemperature.Text = TemperatureSlider.Value.ToString("0.00") + Environment.NewLine +  heating.InFahrenheit().ToString("0.00");
+        }
 
+        private void btnPlus_Click(object sender, RoutedEventArgs e)
+        {
+            TemperatureSlider.Value++;
+        }
 
+        private void btnMinus_Click(object sender, RoutedEventArgs e)
+        {
+            TemperatureSlider.Value--;
+        }
     }
 
 

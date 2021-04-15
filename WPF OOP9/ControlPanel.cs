@@ -1,30 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WPF_OOP9
+﻿namespace WPF_OOP9
 {
     class ControlPanel
     {
-      
-        public virtual void TurnLightsOn()
+
+        public void TurnLightsOn()
         {
 
         }
-        public virtual void TurnLightsOff()
+        public void TurnLightsOff()
+        {
+
+
+
+
+
+        }
+        public void TurnHeatingOn()
         {
 
 
         }
-        public virtual void TurnHeatingOn()
-        {
 
-
-        }
-
-        public virtual void TurnHeatingOFf()
+        public void TurnHeatingOFf()
         {
 
 

@@ -10,10 +10,10 @@
         <Image Name="img1" Source="Images/lamp_uit.jpg" HorizontalAlignment="Left" Height="156" Margin="25,30,0,0" VerticalAlignment="Top" Width="241"/>
         <Button Click="btnLight_Click" Name="btnLight" Content="On/Off" HorizontalAlignment="Left" Height="80" Margin="46,201,0,0" VerticalAlignment="Top" Width="176"/>
         <Image Name="img2" Source="Images/thermometer.jpg" HorizontalAlignment="Left" Height="165" Margin="285,30,0,0" VerticalAlignment="Top" Width="113"/>
-        <Button Name="btnPlus" Content="+" HorizontalAlignment="Left" Height="19" Margin="251,201,0,0" VerticalAlignment="Top" Width="279"/>
-        <Button Name="btnMinus" Content="-" HorizontalAlignment="Left" Height="19" Margin="251,229,0,0" VerticalAlignment="Top" Width="279"/>
+        <Button Name="btnPlus" Content="+" HorizontalAlignment="Left" Height="19" Margin="251,201,0,0" VerticalAlignment="Top" Width="279" Click="btnPlus_Click"/>
+        <Button Name="btnMinus" Content="-" HorizontalAlignment="Left" Height="19" Margin="251,229,0,0" VerticalAlignment="Top" Width="279" Click="btnMinus_Click"/>
         <Button Content="On/Off" HorizontalAlignment="Left" Height="24" Margin="251,257,0,0" VerticalAlignment="Top" Width="279"/>
-        <Slider HorizontalAlignment="Left" Height="156" Margin="419,30,0,0" VerticalAlignment="Top" Width="28" Orientation="Vertical"/>
+        <Slider Minimum="0" Maximum="100" Name="TemperatureSlider" ValueChanged="TemperatureSlider_ValueChanged" HorizontalAlignment="Left" Height="156" Margin="419,30,0,0" VerticalAlignment="Top" Width="28" Orientation="Vertical"/>
         <TextBlock Name="txtTemperature" HorizontalAlignment="Left" Height="156" Margin="452,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78"/>
 
     </Grid>

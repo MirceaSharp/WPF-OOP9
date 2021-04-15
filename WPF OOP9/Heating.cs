@@ -13,10 +13,10 @@ namespace WPF_OOP9
         public double Degrees { get; set; }
         public bool Power { get; set; }
 
-        //public double InFahrenheit()
-        //{
-
-        //}
+        public double InFahrenheit()
+        {
+          return  ((Degrees / 5.00) * 9) + 32;
+        }
 
 
 
